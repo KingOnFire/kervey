@@ -96,5 +96,5 @@ app.get("/test", (req, res) => {
 
 
 httpServer.listen(process.env.PORT || 3000, () => {
-    console.log("running server at http://localhost:3000")
+    console.log("running server at https://kervey.herokuapp.com/")
 })

@@ -39,6 +39,6 @@ document.querySelector("#create").addEventListener("click", () => {
             }).then(response => {
                     return response.json()
                 }).then(json => {
-                    location.assign("http://localhost:3000/view/" + json.code)
+                    location.assign("http://kervey.herokuapp.com/view/" + json.code)
                 })
 })

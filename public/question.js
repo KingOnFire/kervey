@@ -26,7 +26,7 @@ fetch(`/info/${code}`)
                     "answer": event.target.textContent
                 })
             }).then(
-                response => {location.assign(`http://localhost:3000/view/${code}`)}
+                response => {location.assign(`http://kervey.herokuapp.com/view/${code}`)}
             )
         })
         answersDiv.append(button)
