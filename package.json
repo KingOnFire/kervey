@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon .",
-    "start": "node . --port 3000"
+    "start": "node . --port $PORT"
   },
   "author": "",
   "license": "ISC",
