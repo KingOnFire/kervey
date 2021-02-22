@@ -95,6 +95,6 @@ app.get("/test", (req, res) => {
 })
 
 
-httpServer.listen(3000, () => {
+httpServer.listen(process.env.PORT || 3000, () => {
     console.log("running server at http://localhost:3000")
 })
