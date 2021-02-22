@@ -9,7 +9,7 @@ function join(event) {
         if (json.valid) {
             if (!localStorage.getItem(code)) {
                 window.localStorage.setItem(code, "taken");
-                window.location.assign("http://localhost:3000/room/" + code);
+                window.location.assign("http://kervey.herokuapp.com/room/" + code);
             }
             else {
                 document.querySelector("#error").textContent = "You've already answered"
