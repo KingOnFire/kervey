@@ -17,15 +17,18 @@ addAnswer.addEventListener("click", () => {
 
 
 document.querySelector("#create").addEventListener("click", () => {
-
+    let invalid = false;
     answers = []
     document.querySelectorAll(".answer").forEach(element => {
         if (!element.value || answers.includes(element.value) || !document.querySelector("#question").value) {
             document.querySelector("#error").innerText = "Invalid input[s] eg. repeated values for answers, no text input at all"
-            return;
+            invalid = true;
         }
         answers.push(element.value)
     })
+    if (!invalid) {
+        return;
+    }
     fetch("/create", {
                 "method": "POST",
                 "mode": "cors",
