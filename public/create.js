@@ -26,7 +26,7 @@ document.querySelector("#create").addEventListener("click", () => {
         }
         answers.push(element.value)
     })
-    if (!invalid) {
+    if (invalid) {
         return;
     }
     fetch("/create", {
