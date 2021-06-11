@@ -14,7 +14,12 @@ addAnswer.addEventListener("click", () => {
     data.appendChild(input)
 })
 
-
+document.querySelector("#delete").addEventListener("click", () => {
+    if (counter <= 2) {
+        return;
+    }
+    data.removeChild(data.lastChild);
+})
 
 document.querySelector("#create").addEventListener("click", () => {
     let invalid = false;
