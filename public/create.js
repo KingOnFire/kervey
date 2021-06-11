@@ -19,6 +19,7 @@ document.querySelector("#delete").addEventListener("click", () => {
         return;
     }
     data.removeChild(data.lastChild);
+    counter--;
 })
 
 document.querySelector("#create").addEventListener("click", () => {
